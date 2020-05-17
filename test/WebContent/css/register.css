@@ -1,0 +1,70 @@
+
+
+.register-card {
+  background-color: #ffffff;
+  height: 800px;
+  border-radius: 100px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 8px black;
+}
+
+.login {
+  margin-top: 50px;
+}
+input{
+  border: 2px solid black;
+  border-radius: 2px;
+  box-shadow: 6px 8px 6px 3px #888888;
+  padding: 5px;
+}
+
+h1 {
+  padding-top: 30px;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  text-shadow: 2px 2px 8px black;
+}
+
+p {
+  color: black;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  text-shadow: 1px 1px 8px black;
+}
+
+button {
+  width: 180px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  border: 1px solid #ffffff;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  box-shadow: 6px 8px 6px 3px #888888;
+}
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 25px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

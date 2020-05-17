@@ -1,0 +1,85 @@
+/* Start Navbar */
+
+#navbar-html {
+  background-color: #061113;
+}
+#navbar-html.fixed {
+  box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.8);
+}
+#navbar-html .nav-item {
+  width: 100%;
+}
+#navbar-html .nav-link {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 20px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+#navbar-html .nav-link.active,
+#navbar-html .nav-link:hover,
+#navbar-html .nav-link:focus {
+  color: #e56414;
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+#navbar-html .contact {
+  background-color: var(--c1);
+  line-height: 1.075rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.85rem;
+  padding-right: 1.4rem;
+  padding-left: 1.4rem;
+  border-radius: 0.3rem;
+  border: solid 1px var(--c1);
+  transition: color 0.4s, border-color 0.4s, background-color 0.4s;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  display: inline-block;
+}
+#navbar-html .contact:hover,
+#navbar-html .contact:focus {
+  color: var(--c1);
+  border: solid 1px var(--c1);
+  background-color: var(--c1);
+  color: white;
+  opacity: 0.85;
+}
+#navbar-html .navbar-brand {
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+}
+
+#navbar-html .navbar-brand:hover {
+  color: #e56414;
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+@media (min-width: 768px) {
+  #navbar-html .contact {
+    color: white;
+    background-color: var(--c1);
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+  }
+  #navbar-html .contact.active {
+    color: white;
+  }
+  #navbar-html .nav-item {
+    width: auto;
+  }
+  #navbar-html .nav-link {
+    font-size: 0.85rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+}
+
+.nav-pad {
+  padding-top: 90px;
+}
+/* End Navbar */

@@ -1,0 +1,29 @@
+ <div id="user-bar">
+        
+        	<div id="user-section">
+        	
+			<c:choose>
+			  <c:when test="${not empty sessionScope.USER}">
+			    <small> ${sessionScope.USER}</small>
+			    <div id="user-settings" class="dropdown">
+				  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"></button>
+				  <div class="dropdown-menu dropdown-menu-right">
+				    <a class="dropdown-item" href="Cart.jsp">Cart</a>
+				    <a class="dropdown-item" href="LogoutController">Sign Out</a>
+				  </div>
+				</div>
+			  </c:when>
+			  <c:otherwise>
+			    <small>Guest</small>
+			    <div id="user-settings" class="dropdown">
+				  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"></button>
+				  <div class="dropdown-menu dropdown-menu-right">
+				    <a class="dropdown-item" href="Login.jsp">Log in</a>
+				  </div>
+				</div>
+			  </c:otherwise>
+			</c:choose>
+				
+			</div>
+			
+		</div>
